@@ -1,0 +1,22 @@
+Running a traceroute to Google.com
+Output:
+Tracing route to google.com [2a00:1450:400f:804::200e]
+over a maximum of 30 hops:
+
+  1     5 ms     4 ms     4 ms  2001:700:710::1
+  2     7 ms     2 ms     3 ms  om-gw1-l0.oslomet.no [2001:700:700:ff00::94]
+  3     6 ms     2 ms     4 ms  om-gw2-l0.oslomet.no [2001:700:700:ff00::95]
+  4    13 ms     5 ms     2 ms  pil32-gw2.uninett.no [2001:700:0:8020::1]
+  5     2 ms     4 ms     7 ms  tullin-gw1.uninett.no [2001:700:0:2041::1]
+  6     4 ms     3 ms     3 ms  hmg9-gw1.uninett.no [2001:700:0:2141::1]
+  7     4 ms     3 ms     2 ms  no-hmg9.nordu.net [2001:948:3:25::1]
+  8     3 ms     2 ms     2 ms  no-usi.nordu.net [2001:948:1:9::1f]
+  9     9 ms     9 ms     9 ms  se-tug.nordu.net [2001:948:1:1::5]
+ 10     9 ms     9 ms     9 ms  se-bma.nordu.net [2001:948:1:1::3d]
+ 11     *        *        *     Request timed out.
+ 12    12 ms    10 ms    11 ms  2a00:1450:8112::1
+ 13    10 ms    10 ms     9 ms  arn09s05-in-x0e.1e100.net [2a00:1450:400f:804::200e]
+
+Trace complete.
+
+How it finds its way to this route:
