@@ -20,3 +20,7 @@ over a maximum of 30 hops:
 Trace complete.
 
 How it finds its way to this route:
+Traceroute works by sending an ICMP packet with what is called “Time To Stopl”, and when the packet is sent to another point the TTS number is reduced by 1.
+So what happens is that the packet is sent to the first point, TTS is reduced to 0 then gets returned as TTL Exceeded.
+This then logs that time and IP. Again it sends a packet but with a TTS of +1 for every time it runs.
+This repeats until the server it is pinging is the correct server it is looking for. As long as all of this is happening within 30 jumps.
